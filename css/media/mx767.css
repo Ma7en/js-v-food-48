@@ -1,0 +1,109 @@
+
+@media (max-width: 767px) {
+
+
+    /* start header */
+    #menu-bar {
+        display: inline;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #f7f7f7;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        align-items: stretch;
+        flex-direction: column;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        z-index: 10;
+        overflow-y: auto;
+    }
+
+    .header .navbar li a {
+        display: block;
+        padding: 0;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        border: .2rem solid rgba(0, 0, 0, .1);
+        border-left: .5rem solid var(--red);
+        background-color: #fff;
+        position: relative;
+        z-index: 1;
+        transition: var(--main-transition) linear;
+        -webkit-transition: var(--main-transition) linear;
+        -moz-transition: var(--main-transition) linear;
+        -ms-transition: var(--main-transition) linear;
+        -o-transition: var(--main-transition) linear;
+}
+
+    .header .navbar li a:hover {
+        color: #fff;
+        border-color: #fff;
+        border-radius: 100px;
+        transition: var(--main-transition) linear;
+        -webkit-transition: var(--main-transition) linear;
+        -moz-transition: var(--main-transition) linear;
+        -ms-transition: var(--main-transition) linear;
+        -o-transition: var(--main-transition) linear;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        -ms-border-radius: 100px;
+        -o-border-radius: 100px;
+}
+
+    .header .navbar li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0%;
+        height: 100%;
+        z-index: -2;
+        background-color: var(--red);
+        transition: var(--main-transition) linear;
+        -webkit-transition: var(--main-transition) linear;
+        -moz-transition: var(--main-transition) linear;
+        -ms-transition: var(--main-transition) linear;
+        -o-transition: var(--main-transition) linear;
+}
+
+    .header .navbar li a:hover::after {
+        width: 100%;
+        border-radius: 50px;
+        transition: var(--main-transition) linear;
+        -webkit-transition: var(--main-transition) linear;
+        -moz-transition: var(--main-transition) linear;
+        -ms-transition: var(--main-transition) linear;
+        -o-transition: var(--main-transition) linear;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+}
+
+
+
+    /* start home */
+    .home .content {
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
